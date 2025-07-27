@@ -1,0 +1,40 @@
+#countdown-wrapper {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #f0e9db;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 400px;
+  }
+
+  #countdown-wrapper h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e0d5b9;
+  }
+
+  #countdown {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  #countdown div {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    width: 70px;
+  }
+
+  #countdown span {
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+
+  #countdown small {
+    font-size: 0.8rem;
+    color: #c5c5c5;
+  }
