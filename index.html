@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitación 15 años Isabella</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=map_search" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/counter.css">
 
@@ -12,12 +14,20 @@
 
 <body>
     <div class="container">
-        <img src="img/invitacion.jpeg" alt="Invitación Isabella 15 años" style="border-radius: 5%;" />
-        <a id="link-maps" class="link" href="https://maps.app.goo.gl/2UkA5bAjDwpFqGUj6" target="_blank"
-            title="Ver ubicación"></a>
-        <a id="link-rsvp" class="link" href="https://forms.gle/erWPyQGJE65uLEGW9" target="_blank"
-            title="Confirmar asistencia"></a>
+        <img src="img/invitacion.jpeg" alt="Invitación Isabella 15 años" style="border-radius: 3%;" />
     </div>
+    <!-- Botones de acción -->
+    <div class="botones">
+        <a href="https://maps.app.goo.gl/2UkA5bAjDwpFqGUj6" target="_blank">
+            ¿cómo llegar?
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <a href="https://forms.gle/erWPyQGJE65uLEGW9" target="_blank">
+            ¡Confirmar asistencia!
+            <i class="fa-solid fa-clipboard-check"></i>
+        </a>
+    </div>
+
     <div id="countdown-wrapper">
         <h3>Faltan</h3>
         <div id="countdown">
@@ -27,6 +37,7 @@
             <div><span id="seconds">00</span><small>Segundos</small></div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/35e2e7488e.js" crossorigin="anonymous"></script>
     <script src="js/counter.js"></script>
 </body>
 
