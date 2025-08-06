@@ -24,17 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
     countdown();
     const urlParams = new URLSearchParams(window.location.search)
 
-    try {
 
-        const guestsNumber = Number(urlParams.get('guests'))
-        const guestsNumberSpan = document.querySelector('#guests h3 span')
-        const guestsDiv = document.querySelector('#guests')
 
-        if (guestsNumber != undefined && guestsNumber > 0 && guestsNumber <= 5) {
-            guestsNumberSpan.textContent = guestsNumber
-            guestsDiv.toggleAttribute('hidden')
-        }
-    } catch (error) {
-        guestsDiv.setAttribute('hidden')
+    const guestsNumber = Number(urlParams.get('guests')) || 1
+    const guestsNumberSpan = document.querySelector('#guests h3 span')
+    const guestsMessage = document.querySelector('#guests h3')
+
+    if (guestsNumber > 1 && guestsNumber <= 4) {
+        guestsNumberSpan.textContent = guestsNumber
+        guestsMessage.textContent = guestsMessage.textContent.replace('persona', 'personas')
     }
+
 })
